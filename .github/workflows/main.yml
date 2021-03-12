@@ -34,7 +34,7 @@ jobs:
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@3.5.9  // 引用别人的部署插件
         with: 
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}   // 这里需要设置成你的 token
+          ACCESS_TOKEN: 279c41644613170e3a5d53e462d9e8941d9fed63   // 这里需要设置成你的 token
           BRANCH: gh-pages
           FOLDER: docs/.vuepress/dist
           echo test, and deploy your project.
