@@ -5,13 +5,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@master
+      uses: actions/checkout@main
 
     - name: vuepress-deploy
-      uses: bongxin/xin-vuepress@master
+      uses: bongxin/xin-vuepress@main
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        TARGET_REPO: username/repo
-        TARGET_BRANCH: master
+        TARGET_REPO: bongxin/bongxin.github.io
+        TARGET_BRANCH: main
         BUILD_SCRIPT: yarn && yarn build
         BUILD_DIR: blog/.vuepress/dist/
